@@ -1,0 +1,67 @@
+@import
+  "lulu-settings",
+  "lulu-custom",
+  "lulu-mixins";
+
+
+// Type scale utilities
+// -----------------------------------------------------------------------------
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @include headings();
+}
+
+@each $header, $size in (
+  "h1": $h1,
+  "h2": $h2,
+  "h3": $h3,
+  "h4": $h4,
+  "h5": $h5,
+  "h6": $h6
+) {
+  .#{$header} {
+    font-size: $size;
+  }
+}
+
+.xl   { font-size: $font-size-xl; }
+.xxl  { font-size: $font-size-xxl; }
+.xxxl { font-size: $font-size-xxxl; }
+
+
+// Text utilities
+// -----------------------------------------------------------------------------
+
+.normal { font-weight: normal; }
+.bold   { font-weight: bold; }
+.italic { font-style: italic; }
+
+.center      { text-align: center; }
+.justify     { text-align: justify; }
+.left-align  { text-align: left; }
+.right-align { text-align: right; }
+
+.capitalize { text-transform: capitalize; }
+.lowercase  { text-transform: lowercase; }
+.uppercase  { text-transform: uppercase; }
+
+.nowrap { white-space: nowrap; }
+.break-word { word-wrap: break-word; }
+
+.strikethrough { text-decoration: line-through; }
+
+.middle { vertical-align: middle; }
+
+
+// List utilities
+// -----------------------------------------------------------------------------
+
+.list-reset {
+  padding-left: 0;
+  list-style: none;
+}

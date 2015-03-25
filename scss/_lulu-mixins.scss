@@ -1,0 +1,46 @@
+// Margins + Paddings
+// -----------------------------------------------------------------------------
+
+@mixin margins-paddings($property, $shorthand, $name, $space) {
+  .#{$shorthand}#{$name} {
+    #{$property}: $space;
+  }
+
+  .#{$shorthand}t#{$name} {
+    #{$property}-top: $space;
+  }
+
+  .#{$shorthand}r#{$name} {
+    #{$property}-right: $space;
+  }
+
+  .#{$shorthand}b#{$name} {
+    #{$property}-bottom: $space;
+  }
+
+  .#{$shorthand}l#{$name} {
+    #{$property}-left: $space;
+  }
+
+  .#{$shorthand}y#{$name} {
+    #{$property}-top: $space;
+    #{$property}-bottom: $space;
+  }
+
+  .#{$shorthand}x#{$name} {
+    #{$property}-left: $space;
+    #{$property}-right: $space;
+  }
+}
+
+
+// Headings
+// -----------------------------------------------------------------------------
+
+@mixin headings {
+  margin-top: $space-2;
+  margin-bottom: $space-1;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color: $heading-color;
+}

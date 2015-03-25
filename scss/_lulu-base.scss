@@ -1,0 +1,168 @@
+@import
+  "lulu-settings",
+  "lulu-custom",
+  "lulu-mixins";
+
+
+// Box Model
+// -----------------------------------------------------------------------------
+
+* { box-sizing: border-box; }
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+// Body
+// -----------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  background: $body-bg;
+  font-family: $font-family;
+  line-height: $line-height;
+  font-size: $font-size;
+  color: $text-color;
+  text-size-adjust: 100%;
+}
+
+
+// Headings
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include headings();
+  font-weight: $heading-font-weight;
+}
+
+@each $header, $size in (
+  "h1": $h1,
+  "h2": $h2,
+  "h3": $h3,
+  "h4": $h4,
+  "h5": $h5,
+  "h6": $h6
+) {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+
+// Links
+// -----------------------------------------------------------------------------
+
+a { text-decoration: none; }
+
+
+// Lists + Paragraphs
+// -----------------------------------------------------------------------------
+
+p,
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: $space-2;
+  font-size: $h4;
+}
+
+ol,
+ul {
+  padding-left: $space-3;
+}
+
+dd { margin-left: $space-3; }
+
+
+// Forms
+// -----------------------------------------------------------------------------
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+textarea { resize: none; }
+
+
+// Tables
+// -----------------------------------------------------------------------------
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+// Images
+// -----------------------------------------------------------------------------
+
+img,
+svg {
+  max-width: 100%;
+}
+
+
+// Code
+// -----------------------------------------------------------------------------
+
+pre,
+code {
+  font-family: $font-family-monospace;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: $space-2;
+  overflow-x: scroll;
+}
+
+
+// Blockquotes
+// -----------------------------------------------------------------------------
+
+blockquote {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+  margin-left: 0;
+  padding-left: $space-2;
+  padding-right: $space-2;
+  font-style: italic;
+}
+
+
+// Horizontal Rules
+// -----------------------------------------------------------------------------
+
+hr {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: $hr-color;
+}
+
+
+// Highlights
+// -----------------------------------------------------------------------------
+
+mark { color: inherit; }

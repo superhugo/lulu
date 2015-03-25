@@ -1,0 +1,36 @@
+@import
+  "lulu-settings",
+  "lulu-custom";
+
+
+// Flex container
+// -----------------------------------------------------------------------------
+
+.flex { display: flex; }
+
+.flex-col { flex-direction: column; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.flex-start   { justify-content: flex-start; }
+.flex-end     { justify-content: flex-end; }
+.flex-center  { justify-content: center; }
+.flex-between { justify-content: space-between; }
+.flex-around  { justify-content: space-around; }
+
+.flex-cross-start    { align-items: flex-start; }
+.flex-cross-end      { align-items: flex-end; }
+.flex-cross-center   { align-items: center; }
+.flex-cross-baseline { align-items: baseline; }
+.flex-cross-stretch  { align-items: stretch; }
+
+
+// Flex items
+// -----------------------------------------------------------------------------
+
+.flex-first { order: -1; }
+.flex-last  { order: 512; }
+
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }

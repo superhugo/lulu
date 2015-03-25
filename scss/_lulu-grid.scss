@@ -1,0 +1,29 @@
+@import
+  "lulu-settings",
+  "lulu-custom";
+
+
+// 12-column grid
+// -----------------------------------------------------------------------------
+
+@for $i from 1 through 12 {
+  .col-#{$i} { width: ($i / 12) * 100%; }
+}
+
+@media #{$breakpoint-small} {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} { width: ($i / 12) * 100%; }
+  }
+}
+
+@media #{$breakpoint-medium} {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} { width: ($i / 12) * 100%; }
+  }
+}
+
+@media #{$breakpoint-large} {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} { width: ($i / 12) * 100%; }
+  }
+}

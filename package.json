@@ -1,0 +1,22 @@
+{
+  "name": "lulu",
+  "version": "1.0.0",
+  "description": "CSS toolkit for Ninjas",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.1"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Hugo Davoust",
+  "license": "MIT"
+}

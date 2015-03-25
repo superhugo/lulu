@@ -1,0 +1,55 @@
+// Spacing
+// -----------------------------------------------------------------------------
+
+$space-0: 0;
+$space-1: .5rem;
+$space-2: 1rem ;
+$space-3: 2rem ;
+$space-4: 3rem ;
+
+
+// Colors
+// -----------------------------------------------------------------------------
+
+$grey       : #222;
+$grey-light : rgba($grey, .10);
+$body-bg    : #fff;
+
+
+// Typography
+// -----------------------------------------------------------------------------
+
+$font-family           : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace : Menlo, Consolas, "Courier New", monospace;
+$font-size             : 100%;
+$line-height           : 1.5;
+$font-weight-bold      : bold;
+$text-color            : $grey;
+
+$heading-font-family : $font-family;
+$heading-line-height : 1.25;
+$heading-font-weight : bold;
+$heading-color       : $grey;
+
+$h1: 2rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1rem;
+$h5: .875rem;
+$h6: .75rem;
+
+$font-size-xl  : 3rem;
+$font-size-xxl : 4rem;
+$font-size-xxxl: 5rem;
+
+$hr-color: $grey-light;
+
+$border-radius: 4px;
+
+
+// Breakpoints
+// -----------------------------------------------------------------------------
+
+$breakpoint-small  : "(max-width: 768px)";
+$breakpoint-medium : "(min-width: 769px)";
+$breakpoint-large  : "(min-width: 1024px)";
