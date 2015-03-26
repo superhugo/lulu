@@ -4,7 +4,6 @@ var gulp         = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var del          = require('del');
 var sass         = require('gulp-ruby-sass');
-var sourcemaps   = require('gulp-sourcemaps');
 var minifyCSS    = require('gulp-minify-css');
 var rename       = require('gulp-rename');
 
@@ -14,16 +13,12 @@ gulp.task('default', ['clean'], function () {
 
 // Concert SCSS to CSS
 gulp.task('dist', function () {
-  return sass('scss/', { sourcemap: true, style: 'expanded' })
+  return sass('scss/', { style: 'expanded' })
     .on('error', function (err) {
       console.error('Error!', err.message);
     })
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
-    }))
-    .pipe(sourcemaps.write('maps', {
-      includeContent: false,
-      sourceRoot: '/scss'
     }))
     .pipe(gulp.dest('dist/'))
     .pipe(minifyCSS())
