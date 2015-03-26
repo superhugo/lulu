@@ -26,6 +26,7 @@ body {
   font-size: $font-size;
   color: $text-color;
   text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 
