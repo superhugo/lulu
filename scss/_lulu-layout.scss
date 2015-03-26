@@ -57,7 +57,7 @@
 .scroll-x { overflow-x: scroll; }
 
 
-// Widths
+// Size utilities
 // -----------------------------------------------------------------------------
 
 .container-720  { width: 720px; }
@@ -65,3 +65,5 @@
 .container-1200 { width: 960px; }
 
 .fit  { max-width: 100%; }
+
+.full-height { height: 100vh; }
