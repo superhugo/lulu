@@ -1,7 +1,23 @@
 {
   "name": "lulu",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "CSS toolkit for Ninjas",
+  "homepage": "http://lulu.ninja",
+  "style": "dist/lulu.css",
+  "scss": "scss/lulu.scss",
+  "author": "Hugo Davoust",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "oocss",
+    "framework"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superhugo/lulu"
+  },
   "dependencies": {
     "gulp": "^3.8.11"
   },
@@ -15,7 +31,5 @@
   },
   "scripts": {
     "start": "gulp"
-  },
-  "author": "Hugo Davoust",
-  "license": "MIT"
+  }
 }
