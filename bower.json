@@ -1,0 +1,26 @@
+{
+  "name": "lulu",
+  "version": "0.0.1",
+  "homepage": "http://lulu.ninja",
+  "authors": [
+    "Hugo Davoust"
+  ],
+  "description": "CSS toolkit for Ninjas",
+  "main": "dist/lulu.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "oocss",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
